@@ -1,0 +1,288 @@
+import speisekarte1 from './assets/Speisekarte-1.jpg';
+import speisekarte2 from './assets/Speisekarte-2.jpg';
+import schnitzel from './assets/schnitzel.png';
+import pizza from './assets/pizza.png';
+import FadeAnimation from '../../components/FadeAnimation.tsx';
+import GridBackground from './components/GridBackground.tsx';
+import GridItem from './components/GridItem.tsx';
+
+const Index = () => {
+    return (
+        <main className={'flex flex-col items-center justify-center gap-5 md:gap-5'}>
+            <section className={'flex flex-col items-center justify-center gap-20'}>
+                <FadeAnimation direction={'left'}>
+                    <div className={'flex flex-col items-center gap-10 md:flex-row'}>
+                        <img
+                            src={pizza}
+                            alt={'pizza'}
+                            width={400}
+                            className={'cursor-pointer rounded-xl transition-all hover:scale-105'}
+                        />
+                        <div className={'flex-col gap-2'}>
+                            <p className={'text-base font-bold text-blue-500 2xl:text-[20px]'}>Große Pizza 🍕</p>
+                            <p className={'text-gray-600'}>
+                                Ca. 60x60cm Belag nach Wahl: Salami, Schinken, Margherita und Gemüse
+                            </p>
+                            <p className={'text-base font-bold text-black 2xl:text-[18px]'}>27,00 €</p>
+                        </div>
+                    </div>
+                </FadeAnimation>
+
+                <FadeAnimation direction={'right'}>
+                    <div className={'flex flex-col items-center gap-2 md:flex-row-reverse'}>
+                        <img
+                            src={schnitzel}
+                            alt={'schnitzel'}
+                            width={400}
+                            className={'cursor-pointer rounded-xl transition-all hover:scale-105'}
+                        />
+                        <div className={'flex flex-col gap-2'}>
+                            <p className={'text-base font-bold text-blue-500 2xl:text-[20px]'}>Schnitzel Satt 🥩</p>
+                            <p className={'text-gray-600'}>
+                                Ab 10 Personen Mit Champignon- und Paprikasoße, dazu Bratkartoffeln und Pommes. Auf
+                                Wunsch auch Putenschnitzel oder Vegetarische Schnitzel
+                            </p>
+                            <p className={'text-base font-bold text-black 2xl:text-[18px]'}>22,50 € p.P</p>
+                        </div>
+                    </div>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex w-full flex-col items-center justify-center gap-5 md:flex-row'}>
+                <FadeAnimation direction={'left'}>
+                    <img
+                        className={'cursor-pointer rounded-xl ring-2 transition-all hover:scale-105'}
+                        src={speisekarte1}
+                        alt={'speisekarte 1'}
+                    ></img>
+                </FadeAnimation>
+                <FadeAnimation direction={'right'}>
+                    <img
+                        className={'cursor-pointer rounded-xl ring-2 transition-all  hover:scale-105'}
+                        src={speisekarte2}
+                        alt={'speisekarte 2'}
+                    ></img>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation direction={'left'}>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-4'} titles={['ALKOHOLFREIE GETRÄNKE', '0,3L', '0,5L', 'FLASCHE']} />
+                        <GridItem
+                            cols={'grid-cols-4'}
+                            texts={['Wasser (Classic, Medium, Still)', '3,50€', '4,30€', '6,00€']}
+                        />
+                        <GridItem cols={'grid-cols-4'} texts={['Coca Cola', '3,50€', '4,30€', '6,00€']} />
+                        <GridItem cols={'grid-cols-4'} texts={['Coca Cola light/zero', '3,50€', '4,30€', '6,00€']} />
+                        <GridItem
+                            cols={'grid-cols-4'}
+                            texts={['Fanta, Sprite, Mezzo Mix', '3,50€', '4,30€', '6,00€']}
+                        />
+                        <GridItem cols={'grid-cols-4'} texts={['Sport Vital', '3,50€', '4,30€', '6,00€']} />
+                        <GridItem
+                            cols={'grid-cols-4'}
+                            texts={['Schweppes Ginger, Ale Bitter , Lemon Tonic Water', '3,70€', '4,50€', '6,50€']}
+                        />
+                        <GridItem cols={'grid-cols-4'} texts={['Red Bull 0,25l', '4,00€', '-', '-']} />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation direction={'right'}>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-3'} titles={['SÄFE/NEKTAR', '0,3L', '0,5L']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Apfel', '3,90€', '3,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Banane', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Kirsche', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Orange', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Maracuja', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Kiba', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Ananas', '3,90€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Rhabarber', '3,90€', '4,90€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['WARME GETRÄNKE', 'TASSE/BECHER']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Kaffee', '3,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Capuccino', '4,10€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Latte Machiato', '4,10€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Espresso', '3,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Tee', '3,10€']} />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-3'} titles={['SEKT/WEIN', '0,1L', '0,2L']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Sekt Hausmarke', '4,30€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Prosecco Hausmarke', '4,70€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Weißwein/Rotwein Hausmarke', '-', '4,70€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Weißweinschorle', '-', '3,60€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-3'} titles={['BIER', '0,3L', '0,5L']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Flensburger vom Fass', '3,80€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Alster vom Fass', '3,80€', '4,90€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Schneider Weizen hell vom Fass', '-', '4,90€']} />
+                        <GridItem
+                            cols={'grid-cols-3'}
+                            texts={['Schneider Weizen Original, Kristall, Alkoholfrei', '-', '4,90€']}
+                        />
+                        <GridItem cols={'grid-cols-3'} texts={['Bananenweizen', '-', '5,10€']} />
+                        <GridItem
+                            cols={'grid-cols-3'}
+                            texts={['Flens Flasche(0,33l), Edles Helles, Dunkel, Gold, Frei, Malz', '3,80€', '-']}
+                        />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['RUM/VODKA/LIKÖR', 'LONGDRINKS 4CL']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Bacardi', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana 3 Jahre', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana 7 Jahre', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Captain Morgan', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Rum 1878', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka Gorbatschow', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka Danzka', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Campmari', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Amaretto', '6,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['SPIRITUOSEN/GIN', 'LONGDRINKS 4CL']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Pernod', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Oldesloer Korn', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Sternmarke', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Bombay Gin', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Gordons Gin', '6,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['WHISKEY & BOURBON', 'LONGDRINKS 4CL']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Ballantines', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jim Beam', '6,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Tullamore Dew', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jack Daniels', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Canadian Club', '7,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Southern Comfort', '6,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['FLASCHEN INKL. 2 FLASCHEN SOFTGETRÄNKE', 'PREIS']} />
+                        <GridItem cols={'grid-cols-2'} texts={['STERNMARKE', '25,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Oldesloer', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka Gorbatschow', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Ballantines', '50,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jim Beam', '50,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Tullamore', '60,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Flasche Sekt(Hausmarke)', '18,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Flasche Wein(Hausmarke)', '20,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jack Daniels', '60,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana Club 3 Jahre', '50,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana Club 7 Jahre', '60,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Captain Morgan', '50,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Bacardi', '50,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka Danzka', '60,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['KURZE', '2CL']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Ramazotti', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jägermeister', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Ouzo', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Bommerlunder', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Gammel Danks', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Korn/Apfelkorn', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Tequila Silber/Gold', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Berliner Luft', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Saurer Apfel', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Sambuca', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Sangrita rot/grün', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Kleiner Feigling', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Nr.3', '2,50€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Dooley oder Baileys', '3,50€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem
+                            cols={'grid-cols-2'}
+                            titles={['PÖTTE MIT SOFTGETRÄNKEN(MIT ENERGY + 5,00€)', 'PREIS']}
+                        />
+                        <GridItem cols={'grid-cols-2'} texts={['Sternmarke', '15,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Oldesloer Korn', '20,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Wodka', '20,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Bacardi', '25,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Captain Morgan', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana Club 3 Jahre', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Havana Club 7 Jahre', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jack Daniels', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Jim Beam', '30,00€']} />
+                        <GridItem cols={'grid-cols-2'} texts={['Tullamore', '30,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-3'} titles={['COCKTAILS', 'MIT ALKOHOL', 'OHNE ALKOHOL']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Aperol Spritz', '7,00€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Andalö/Sekt', '5,00€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Sex on the Beach', '7,00€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Pina Colada', '7,50€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Mai Tai', '7,00€', '-']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Strawberry Colada', '-', '6,00€']} />
+                        <GridItem cols={'grid-cols-3'} texts={['Sportsmann', '-', '6,00€']} />
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex h-full w-full flex-col gap-5 md:flex-row'}>
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['GRAPPA', '2CL']}></GridItem>
+                        <GridItem cols={'grid-cols-2'} texts={['Di Otto Lune', '8,50€']}></GridItem>
+                        <GridItem cols={'grid-cols-2'} texts={['Prime Uve', '9,00€']}></GridItem>
+                    </GridBackground>
+                </FadeAnimation>
+
+                <FadeAnimation>
+                    <GridBackground>
+                        <GridItem cols={'grid-cols-2'} titles={['EINZELFLASCHE', '0,7L']}></GridItem>
+                        <GridItem cols={'grid-cols-2'} texts={['Nr.3(Hausgemacht)', '20,00€']}></GridItem>
+                        <GridItem cols={'grid-cols-2'} texts={['Apfelkorn(Hausgemacht)', '20,00€']}></GridItem>
+                        <GridItem cols={'grid-cols-2'} texts={['Berliner Luft', '25,00€']}></GridItem>
+                    </GridBackground>
+                </FadeAnimation>
+            </section>
+        </main>
+    );
+};
+
+export default Index;
