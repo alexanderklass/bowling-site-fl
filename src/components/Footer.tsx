@@ -1,9 +1,10 @@
-import { FaFacebook } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import facebookLogo from '../assets/facebook-logo.svg';
+import instagramLogo from '../assets/instagram-logo.svg';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <footer
@@ -47,12 +48,12 @@ const Footer = () => {
                 <section className={'flex flex-col gap-1'}>
                     <p className={'text-xl font-bold underline'}>Social Media</p>
                     <div className={'flex flex-row items-center gap-1'}>
-                        <FaFacebook />
-                        <Link to={''}>Facebook/FlensburgerBowlingcenter</Link>
-                    </div>
-                    <div className={'flex flex-row items-center gap-1'}>
-                        <FaInstagram />
-                        <Link to={''}>Instagram/flensburgerbowlingcenter</Link>
+                        <Link to={'https://www.instagram.com/flensburgerbowlingcenter/?hl=de'}>
+                            <img width={30} src={instagramLogo} alt="instagram" />
+                        </Link>
+                        <Link to={'https://de-de.facebook.com/FlensburgerBowlingcenter/'}>
+                            <img width={30} className={'rounded'} src={facebookLogo} alt="facebook" />
+                        </Link>
                     </div>
                 </section>
             </div>

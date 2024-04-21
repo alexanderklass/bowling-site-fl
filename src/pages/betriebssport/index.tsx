@@ -5,8 +5,13 @@ import team from './assets/team.svg';
 import { Link } from 'react-router-dom';
 import FadeAnimation from '../../components/FadeAnimation.tsx';
 import { ReactTyped } from 'react-typed';
+import { useEffect } from 'react';
+import onStartUp from '../../utils/documentHelper.ts';
 
 const Index = () => {
+    useEffect(() => {
+        onStartUp('Betriebssport und Freizeit');
+    }, []);
     return (
         <main className={'flex flex-col items-center justify-center gap-10 text-base md:text-xl'}>
             <FadeAnimation>

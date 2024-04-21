@@ -5,7 +5,12 @@ import eventImage from './assets/in den mai discobowling.jpg';
 import VideoPlayer from '../../components/VideoPlayer.tsx';
 import { ReactTyped } from 'react-typed';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import onStartUp from '../../utils/documentHelper.ts';
 const Index = () => {
+    useEffect(() => {
+        onStartUp();
+    }, []);
     return (
         <main className={'z-10 flex flex-col gap-10 text-base md:gap-20 2xl:text-xl'}>
             <FadeAnimation direction={'left'}>
@@ -21,7 +26,7 @@ const Index = () => {
                             <ReactTyped
                                 className={'text-blue-500'}
                                 strings={['Flensburger Bowlingcenter!']}
-                                showCursor={true}
+                                showCursor={false}
                                 typeSpeed={70}
                             />
                         </p>

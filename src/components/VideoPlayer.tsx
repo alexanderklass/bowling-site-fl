@@ -6,9 +6,9 @@ const VideoPlayer = () => {
             <ReactPlayer
                 url={'https://mediandr-a.akamaihd.net/progressive/2023/0212/TV-20230212-2015-0900.hd.mp4'}
                 volume={0}
-                autoPlay={true}
                 width={520}
                 height={295}
+                playing
                 controls={true}
             />
         </div>

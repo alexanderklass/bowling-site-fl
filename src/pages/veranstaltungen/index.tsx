@@ -7,9 +7,15 @@ import tresen1 from './assets/tresen-1.jpg';
 import tresen2 from './assets/tresen-2.jpg';
 import tresen3 from './assets/tresen-3.jpg';
 import 'swiper/swiper-bundle.css';
+import { useEffect } from 'react';
+import onStartUp from '../../utils/documentHelper.ts';
 const Index = () => {
     const veranstaltungList = [veranstaltung1, veranstaltung2, veranstaltung3];
     const tresenList = [tresen1, tresen2, tresen3];
+
+    useEffect(() => {
+        onStartUp('Veranstaltungen');
+    }, []);
 
     return (
         <main className={'flex flex-col items-center justify-center gap-5'}>

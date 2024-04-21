@@ -1,6 +1,12 @@
+import onStartUp from '../../utils/documentHelper.ts';
+import { useEffect } from 'react';
 const Index = () => {
+    useEffect(() => {
+        onStartUp('Datenschutz');
+    }, []);
     return (
         <main className="flex w-full items-center justify-center py-10">
+            <title>Datenschutz</title>
             <section className={'w-[340px] md:w-[1000px]'}>
                 <h1 className={'text-xl font-bold'}>Datenschutz&shy;erkl&auml;rung</h1>
                 <h2 className={'font-bold text-blue-500'}>1. Datenschutz auf einen Blick</h2>
