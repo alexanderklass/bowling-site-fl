@@ -47,13 +47,13 @@ const Index = () => {
                         <p>16:00 - Open End</p>
                         <div>
                             <p>18:00 - 21:00 Freizeitliga</p>
-                            <p>Ab 21:00 Uhr Discobowling</p>
+                            <p className={'font-bold text-blue-500'}>Ab 21:00 Uhr Discobowling</p>
                         </div>
                     </div>
                     <div className={'grid grid-cols-3 gap-5'}>
                         <p>Samstag</p>
                         <p>16:00 - Open End</p>
-                        <p>Ab 20:00 Uhr Discobowling</p>
+                        <p className={'font-bold text-blue-500'}>Ab 20:00 Uhr Discobowling</p>
                     </div>
                     <div className={'grid grid-cols-3 gap-5'}>
                         <p>Sonntag</p>
@@ -84,7 +84,7 @@ const Index = () => {
                         <p>Freitag</p>
                         <div>
                             <p>16:00 - 21:00</p>
-                            <p>Ab 21:00 Discobowling</p>
+                            <p className={'font-bold text-blue-500'}>Ab 21:00 Discobowling</p>
                         </div>
                         <div>
                             <p>26,-€</p>
@@ -95,7 +95,7 @@ const Index = () => {
                         <p>Samstag</p>
                         <div>
                             <p>16:00 - 20:00</p>
-                            <p>Ab 20:00 Discobwoling</p>
+                            <p className={'font-bold text-blue-500'}>Ab 20:00 Discobowling</p>
                         </div>
                         <div>
                             <p>26,-€</p>
