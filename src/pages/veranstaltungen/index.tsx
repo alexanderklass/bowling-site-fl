@@ -19,13 +19,15 @@ const Index = () => {
 
     return (
         <main className={'flex flex-col items-center justify-center gap-5'}>
-            <section className={'flex w-full flex-col items-center justify-center'}>
+            <section className={'flex flex-col items-center justify-center'}>
                 <FadeAnimation>
-                    <div className={'flex w-full flex-col items-center justify-center md:flex-row'}>
-                        <ImageSwiper list={tresenList} />
-                        <div className={'max-w-[500px]'}>
-                            <p className={'text-gray-600'}>
-                                <span className={'font-bold text-blue-500'}>In unserer Gastronomie 🧑🏽‍🍳</span> halten wir
+                    <div className={'flex flex-col items-center justify-center md:flex-row'}>
+                        <div className={'w-[300px] md:w-[400px] lg:w-[500px]'}>
+                            <ImageSwiper list={tresenList} />
+                        </div>
+                        <div className={'w-full max-w-[500px]'}>
+                            <p className={'text-xs text-gray-600 lg:text-base'}>
+                                <span className={'font-bold  text-blue-500'}>In unserer Gastronomie 🧑🏽‍🍳</span> halten wir
                                 Speisen für den kleinen, sowie auch den großen Hunger für sie bereit. Während des
                                 Bowling spiels besteht die Möglichkeit Fingerfoods, wie Pizzabrötchen zu genießen. Für
                                 den großen Hunger bieten wir am Tisch Speisen aller Art an. Unsere Speisen werden alle
@@ -38,12 +40,14 @@ const Index = () => {
                     </div>
                 </FadeAnimation>
             </section>
-            <section className={'flex w-full flex-col items-center justify-center'}>
+            <section className={'flex flex-col items-center justify-center'}>
                 <FadeAnimation>
-                    <div className={'flex w-full flex-col items-center justify-center md:flex-row-reverse'}>
-                        <ImageSwiper delay={3000} list={veranstaltungList} />
-                        <div className={'max-w-[500px]'}>
-                            <p className={'text-gray-600'}>
+                    <div className={'flex flex-col items-center justify-center md:flex-row-reverse'}>
+                        <div className={'w-[300px] md:w-[400px] lg:w-[500px]'}>
+                            <ImageSwiper delay={3000} list={veranstaltungList} />
+                        </div>
+                        <div className={'w-full max-w-[500px]'}>
+                            <p className={'text-xs text-gray-600 lg:text-base'}>
                                 <span className={'font-bold text-blue-500'}>Für Veranstaltungen 🎉 </span>aller Art
                                 halten wir einen Clubraum für bis zu 80 Personen bereit. Ob Betriebsfeiern,
                                 Familienfeste, Vereinsfeiern, Sitzungen oder Veranstaltungen wie Fußball,
@@ -52,7 +56,7 @@ const Index = () => {
                                 Raum auch Feiern mit Buffets aller Art stattfinden. Zum Beispiel für Weihnachtsfeiern
                                 mit Grünkohl essen.
                             </p>
-                            <p className={'font-bold'}>Bitte denkt an rechtzeitige Buchung.</p>
+                            <p className={'text-xs font-bold lg:text-base'}>Bitte denkt an rechtzeitige Buchung.</p>
                         </div>
                     </div>
                 </FadeAnimation>

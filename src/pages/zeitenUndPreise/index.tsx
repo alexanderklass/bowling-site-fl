@@ -14,11 +14,15 @@ const Index = () => {
             <FadeAnimation direction={'left'}>
                 <section
                     className={
-                        'relative grid gap-1 rounded-lg p-3 text-xs shadow-xl ring-1 ring-gray-300 md:w-[1000px] 2xl:text-base'
+                        'relative flex flex-col gap-1 rounded-lg p-3 text-xs shadow-xl ring-1 ring-gray-300 2xl:text-base'
                     }
                 >
-                    <div className={'grid grid-cols-3 gap-5 font-bold underline'}>
-                        <p>ÖFFNUNGSZEITEN</p>
+                    <div
+                        className={
+                            'grid grid-cols-3 gap-5 text-[10px] font-bold underline md:text-[14px] 2xl:text-base'
+                        }
+                    >
+                        <p className={'text-blue-500'}>ÖFFNUNGSZEITEN</p>
                         <p>UHRZEIT</p>
                         <p>EVENTS</p>
                     </div>
@@ -67,11 +71,15 @@ const Index = () => {
             <FadeAnimation>
                 <section
                     className={
-                        'relative grid gap-2 rounded-lg bg-white bg-opacity-45 p-3 text-xs shadow-xl ring-1 ring-gray-300 md:w-[1000px] 2xl:text-base'
+                        'relative flex flex-col gap-2 rounded-lg bg-white bg-opacity-45 p-3 text-xs shadow-xl ring-1 ring-gray-300 2xl:text-base'
                     }
                 >
-                    <div className={'grid grid-cols-3 gap-5 font-bold underline'}>
-                        <p>PREISE</p>
+                    <div
+                        className={
+                            'grid grid-cols-3 gap-5 text-[10px] font-bold underline md:text-[14px] 2xl:text-base'
+                        }
+                    >
+                        <p className={'text-blue-500'}>PREISE</p>
                         <p>UHRZEIT</p>
                         <p>BAHN/STUNDE</p>
                     </div>

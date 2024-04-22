@@ -77,8 +77,8 @@ const Index = () => {
                 <section className={'flex w-full items-center justify-center'}>
                     <div className={'flex flex-col-reverse items-center gap-5 md:flex-row'}>
                         <div className={'flex w-full flex-col gap-2'}>
-                            <p className={'text-xl font-bold text-blue-500'}>Betriebssportliga</p>
-                            <p className={'text-[15px] text-gray-600'}>
+                            <p className={'text-base font-bold text-blue-500 lg:text-xl'}>Betriebssportliga</p>
+                            <p className={'text-xs text-gray-600 lg:text-base'}>
                                 Für den Betriebssport können sich Gruppen aller Art melden. Voraussetzungen sind
                                 mindestens vier Spieler*innen. Es wird mit Handicap gespielt, dass für jeden individuell
                                 berechnet wird. So haben auch Anfänger Gruppen Chancen die sogenannten großen zu
@@ -106,8 +106,8 @@ const Index = () => {
                 <section className={'flex w-full items-center justify-center'}>
                     <div className={'flex flex-col-reverse items-center gap-5 md:flex-row-reverse'}>
                         <div className={'flex w-full flex-col gap-2'}>
-                            <p className={'text-xl font-bold text-blue-500'}>Freizeitliga</p>
-                            <p className={'text-[15px] text-gray-600'}>
+                            <p className={'text-base font-bold text-blue-500 lg:text-xl'}>Freizeitliga</p>
+                            <p className={'text-xs text-gray-600 lg:text-base'}>
                                 Freitag abends, findet wieder die traditionsreiche Freizeitliga statt. Die Freitags Liga
                                 findet jeden Freitag von 18:15 Uhr bis 21:00 Uhr statt. Außer während der Schulferien
                                 wird jeden Freitag gespielt. Auch hier können Mannschaften ab sofort gemeldet werden.

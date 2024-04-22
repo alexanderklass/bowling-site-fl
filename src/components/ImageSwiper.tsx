@@ -12,7 +12,7 @@ export interface ISwiper {
 const ImageSwiper = ({ list, delay = 2500, slidesPerView = 1 }: ISwiper) => {
     return (
         <Swiper
-            className={'w-[340px] select-none md:w-[550px]'}
+            className={'select-none'}
             modules={[Pagination, Autoplay, Mousewheel]}
             autoplay={{ delay: delay, disableOnInteraction: false }}
             mousewheel={true}

@@ -13,7 +13,7 @@ const Index = () => {
     return (
         <main className={'flex items-center justify-center'}>
             <FadeAnimation className={'flex items-center justify-center'}>
-                <section className={'w-full md:w-[400px]'}>
+                <section className={'w-[300px] md:w-[500px]'}>
                     <ImageSwiper list={eventsList} />
                 </section>
             </FadeAnimation>

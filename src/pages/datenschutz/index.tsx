@@ -5,7 +5,7 @@ const Index = () => {
         onStartUp('Datenschutz');
     }, []);
     return (
-        <main className="flex w-full items-center justify-center py-10">
+        <main className="mx-auto flex w-[300px] items-center justify-center py-10 sm:w-[500px] md:w-[700px] lg:w-[1000px]">
             <title>Datenschutz</title>
             <section className={'w-[340px] md:w-[1000px]'}>
                 <h1 className={'text-xl font-bold'}>Datenschutz&shy;erkl&auml;rung</h1>

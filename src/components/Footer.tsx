@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer
             className={
-                'inset-x-0 bottom-0 mt-auto w-full border-t border-blue-100 bg-blue-50 p-4 text-xs 2xl:text-base'
+                'inset-x-0 bottom-0 mt-auto w-full border-t border-blue-100 bg-blue-50 p-5 text-xs md:p-4 2xl:text-base'
             }
         >
             <div className={'mx-3 flex flex-col items-start justify-center gap-3 md:flex-row'}>

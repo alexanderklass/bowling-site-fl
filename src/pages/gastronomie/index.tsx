@@ -8,6 +8,7 @@ import GridItem from './components/GridItem.tsx';
 import onStartUp from '../../utils/documentHelper.ts';
 import GridDisclosure from '../../components/GridDisclosure.tsx';
 import { useEffect } from 'react';
+import Image from '../../components/Image.tsx';
 
 const Index = () => {
     useEffect(() => {
@@ -19,12 +20,7 @@ const Index = () => {
             <section className={'flex flex-col items-center justify-center gap-20'}>
                 <FadeAnimation direction={'left'}>
                     <div className={'flex flex-col items-center gap-10 md:flex-row'}>
-                        <img
-                            src={pizza}
-                            alt={'pizza'}
-                            width={400}
-                            className={'cursor-pointer rounded-xl transition-all hover:scale-105'}
-                        />
+                        <Image src={pizza} alt={'pizza'} />
                         <div className={'flex-col gap-2'}>
                             <p className={'text-base font-bold text-blue-500 2xl:text-[20px]'}>Große Pizza 🍕</p>
                             <p className={'text-gray-600'}>
@@ -37,12 +33,7 @@ const Index = () => {
 
                 <FadeAnimation direction={'right'}>
                     <div className={'flex flex-col items-center gap-2 md:flex-row-reverse'}>
-                        <img
-                            src={schnitzel}
-                            alt={'schnitzel'}
-                            width={400}
-                            className={'cursor-pointer rounded-xl transition-all hover:scale-105'}
-                        />
+                        <Image src={schnitzel} alt={'schnitzel'} />
                         <div className={'flex flex-col gap-2'}>
                             <p className={'text-base font-bold text-blue-500 2xl:text-[20px]'}>Schnitzel Satt 🥩</p>
                             <p className={'text-gray-600'}>
@@ -57,18 +48,10 @@ const Index = () => {
 
             <section className={'flex w-full flex-col items-center justify-center gap-5 md:flex-row'}>
                 <FadeAnimation direction={'left'}>
-                    <img
-                        className={'cursor-pointer rounded-xl ring-2 transition-all hover:scale-105'}
-                        src={speisekarte1}
-                        alt={'speisekarte 1'}
-                    ></img>
+                    <Image src={speisekarte1} alt={'speisekarte 1'} />
                 </FadeAnimation>
                 <FadeAnimation direction={'right'}>
-                    <img
-                        className={'cursor-pointer rounded-xl ring-2 transition-all  hover:scale-105'}
-                        src={speisekarte2}
-                        alt={'speisekarte 2'}
-                    ></img>
+                    <Image src={speisekarte2} alt={'speisekarte 2'} />
                 </FadeAnimation>
             </section>
 
@@ -275,7 +258,7 @@ const Index = () => {
 
                     <GridDisclosure title={'EINZELFLASCHEN'}>
                         <GridBackground>
-                            <GridItem cols={'grid-cols-2'} titles={['EINZELFLASCHE', '0,7L']}></GridItem>
+                            <GridItem cols={'grid-cols-2'} titles={['', '0,7L']}></GridItem>
                             <GridItem cols={'grid-cols-2'} texts={['Nr.3(Hausgemacht)', '20,00€']}></GridItem>
                             <GridItem cols={'grid-cols-2'} texts={['Apfelkorn(Hausgemacht)', '20,00€']}></GridItem>
                             <GridItem cols={'grid-cols-2'} texts={['Berliner Luft', '25,00€']}></GridItem>
