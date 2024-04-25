@@ -8,13 +8,14 @@ import { ReactTyped } from 'react-typed';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import onStartUp from '../../utils/documentHelper.ts';
+
 const Index = () => {
     useEffect(() => {
         onStartUp();
     }, []);
     return (
         <main className={'z-10 flex flex-col gap-10 text-base md:gap-20 2xl:text-xl'}>
-            <FadeAnimation direction={'left'}>
+            <FadeAnimation>
                 <section className={'flex w-full flex-col items-center justify-center gap-5 md:flex-row'}>
                     <Image src={shoeImage} alt={'shoeLogo'} />
                     <div className={'flex w-full max-w-[500px] flex-col gap-2'}>
@@ -45,7 +46,7 @@ const Index = () => {
                 </section>
             </FadeAnimation>
 
-            <FadeAnimation direction={'right'}>
+            <FadeAnimation>
                 <section className={'flex w-full flex-col-reverse items-center justify-center gap-5 md:flex-row'}>
                     <div className={'flex w-full max-w-[500px] flex-col gap-2'}>
                         <p className={'font-bold'}>
@@ -63,10 +64,14 @@ const Index = () => {
                 </section>
             </FadeAnimation>
 
-            <FadeAnimation direction={'right'}>
+            <FadeAnimation>
                 <section className="flex flex-col items-center justify-center gap-5 md:flex-row">
                     <div className={'hidden w-full lg:flex lg:max-w-[500px]'}>
-                        <VideoPlayer />
+                        <VideoPlayer
+                            height={295}
+                            width={520}
+                            url={'https://mediandr-a.akamaihd.net/progressive/2023/0212/TV-20230212-2015-0900.hd.mp4'}
+                        />
                     </div>
                     <div className={'flex w-full flex-col gap-2 text-white lg:max-w-[500px]'}>
                         <p className={'text-xl font-bold text-blue-500'}>
@@ -82,7 +87,7 @@ const Index = () => {
                 </section>
             </FadeAnimation>
 
-            <FadeAnimation direction={'left'}>
+            <FadeAnimation>
                 <section className={'flex flex-col items-center justify-center gap-5 md:flex-row-reverse'}>
                     <Image src={eventImage} alt={'eventLogo'} />
                     <div className={'flex w-full max-w-[500px] flex-col gap-2'}>

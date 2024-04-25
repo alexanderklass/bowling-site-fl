@@ -7,10 +7,12 @@ import tresen1 from './assets/tresen-1.jpg';
 import tresen2 from './assets/tresen-2.jpg';
 import tresen3 from './assets/tresen-3.jpg';
 import 'swiper/swiper-bundle.css';
-import { useEffect } from 'react';
 import onStartUp from '../../utils/documentHelper.ts';
 import StyledButton from '../../components/StyledButton.tsx';
+import VideoPlayer from '../../components/VideoPlayer.tsx';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 const Index = () => {
     const veranstaltungList = [veranstaltung1, veranstaltung2, veranstaltung3];
     const tresenList = [tresen1, tresen2, tresen3];
@@ -69,6 +71,30 @@ const Index = () => {
                                     <StyledButton text={'Jetzt Buchen!'} />
                                 </Link>
                             </div>
+                        </div>
+                    </div>
+                </FadeAnimation>
+            </section>
+
+            <section className={'flex w-full flex-col items-center justify-center'}>
+                <FadeAnimation>
+                    <div className={'flex flex-col items-center justify-center gap-y-2 md:flex-row'}>
+                        <div className={'w-[300px] md:w-[400px] lg:w-[600px]'}>
+                            <VideoPlayer
+                                controls={false}
+                                height={540}
+                                width={300}
+                                url={'https://i.imgur.com/LXm61g4.mp4'}
+                            />
+                        </div>
+                        <div className={'w-full max-w-[500px]'}>
+                            <p className={'text-xs text-gray-600 lg:text-base'}>
+                                <span className={'font-bold text-blue-500'}>Erkunden Sie 🏢 </span>
+                                unseren geräumigen Clubraum, der perfekt für jede Art von Event geeignet ist. Ob für
+                                eine lockere Firmenfeier, eine lebhafte Geburtstagsparty oder ein entspanntes
+                                Beisammensein – dieser Raum passt sich Ihren Bedürfnissen an. Freuen Sie sich auf tolles
+                                Essen, eine große Auswahl an Getränken und unseren freundlichen Service.
+                            </p>
                         </div>
                     </div>
                 </FadeAnimation>

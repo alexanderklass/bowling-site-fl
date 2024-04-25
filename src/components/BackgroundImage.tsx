@@ -1,9 +1,7 @@
-import background from '../assets/background-test.jpg';
+import background from '../assets/background.jpg';
 
 const BackgroundImage = () => {
-    return (
-        <img src={background} alt="BackgroundImage" className={'fixed -z-10 hidden h-full w-full opacity-20 md:flex'} />
-    );
+    return <img src={background} alt="BackgroundImage" className={'fixed -z-10 h-full w-full opacity-20'} />;
 };
 
 export default BackgroundImage;
