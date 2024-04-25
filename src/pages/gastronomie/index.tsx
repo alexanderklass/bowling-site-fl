@@ -143,7 +143,7 @@ const Index = () => {
                             <GridItem cols={'grid-cols-4'} titles={['', '0,3L', '0,5L', 'FLASCHE']} />
                             <GridItem
                                 cols={'grid-cols-4'}
-                                texts={['Wasser (Classic, Medium, Still)', '3,50€', '4,30€', '6,00€']}
+                                texts={['Wasser (Classic, Medium, Still)', '3,20€', '4,10€', '5,50€']}
                             />
                             <GridItem cols={'grid-cols-4'} texts={['Coca Cola', '3,50€', '4,30€', '6,00€']} />
                             <GridItem
@@ -166,7 +166,7 @@ const Index = () => {
                     <GridDisclosure title={'SÄFTE & NEKTAR'}>
                         <GridBackground>
                             <GridItem cols={'grid-cols-3'} titles={['', '0,3L', '0,5L']} />
-                            <GridItem cols={'grid-cols-3'} texts={['Apfel', '3,90€', '3,90€']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Apfel', '3,90€', '4,90€']} />
                             <GridItem cols={'grid-cols-3'} texts={['Banane', '3,90€', '4,90€']} />
                             <GridItem cols={'grid-cols-3'} texts={['Kirsche', '3,90€', '4,90€']} />
                             <GridItem cols={'grid-cols-3'} texts={['Orange', '3,90€', '4,90€']} />
@@ -203,6 +203,7 @@ const Index = () => {
                             <GridItem cols={'grid-cols-3'} titles={['', '0,3L', '0,5L']} />
                             <GridItem cols={'grid-cols-3'} texts={['Flensburger vom Fass', '3,80€', '4,90€']} />
                             <GridItem cols={'grid-cols-3'} texts={['Alster vom Fass', '3,80€', '4,90€']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Original Hofbräu vom Fass', '3,80€', '4,90€']} />
                             <GridItem cols={'grid-cols-3'} texts={['Schneider Weizen hell vom Fass', '-', '4,90€']} />
                             <GridItem
                                 cols={'grid-cols-3'}
@@ -226,7 +227,7 @@ const Index = () => {
                             <GridItem cols={'grid-cols-2'} texts={['Rum 1878', '6,00€']} />
                             <GridItem cols={'grid-cols-2'} texts={['Wodka Gorbatschow', '6,00€']} />
                             <GridItem cols={'grid-cols-2'} texts={['Wodka Danzka', '7,00€']} />
-                            <GridItem cols={'grid-cols-2'} texts={['Campmari', '6,00€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Capmari', '6,00€']} />
                             <GridItem cols={'grid-cols-2'} texts={['Amaretto', '6,00€']} />
                         </GridBackground>
                     </GridDisclosure>
