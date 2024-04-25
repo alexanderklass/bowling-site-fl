@@ -65,10 +65,10 @@ const Index = () => {
 
             <FadeAnimation direction={'right'}>
                 <section className="flex flex-col items-center justify-center gap-5 md:flex-row">
-                    <div className={'hidden w-full max-w-[500px] p-0 lg:flex'}>
+                    <div className={'hidden w-full lg:flex lg:max-w-[500px]'}>
                         <VideoPlayer />
                     </div>
-                    <div className={'flex w-full flex-col gap-2 p-2 text-white lg:max-w-[500px]'}>
+                    <div className={'flex w-full flex-col gap-2 text-white lg:max-w-[500px]'}>
                         <p className={'text-xl font-bold text-blue-500'}>
                             <span className={'text-black'}>Heavy Metal </span>Bowling 🎸
                         </p>

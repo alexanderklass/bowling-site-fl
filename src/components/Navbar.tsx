@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`top-0 z-20 flex w-screen flex-col items-center justify-center ${openHamburger ? 'translate-y-0' : '-translate-y-[60%]'} gap-1 border-b border-blue-100 bg-blue-50 p-2 transition-transform duration-300 md:fixed md:justify-around lg:translate-y-0 lg:flex-row`}
+            className={`top-0 z-20 flex w-screen flex-col items-center justify-center ${openHamburger ? 'translate-y-0' : '-translate-y-[65%]'} gap-1 border-b border-blue-100 bg-blue-50 p-2 transition-transform duration-300 md:fixed md:justify-around lg:translate-y-0 lg:flex-row`}
         >
             <div className="mx-1 hidden items-center gap-2 text-xs lg:flex 2xl:text-base">
                 <NavbarLogo />
@@ -29,11 +29,11 @@ const Navbar = () => {
                 className={`grid grid-cols-2 justify-center gap-1 md:flex md:flex-wrap md:gap-0.5 lg:flex xl:gap-2 2xl:flex-row`}
             >
                 <NavbarButton text={'Start'} link={'/'} />
-                <NavbarButton text={'Öffnungszeiten & Preise'} link={'/Öffnungszeiten und Preise'} />
+                <NavbarButton text={'Öffnungszeiten & Preise'} link={'/oeffnungszeiten-preise'} />
                 <NavbarButton text={'Gastronomie'} link={'/gastronomie'} />
                 <NavbarButton text={'Veranstaltungen'} link={'/veranstaltungen'} />
                 <NavbarButton text={`Events ${getCurrentYear}`} link={'/events'} />
-                <NavbarButton text={'Betriebssport & Freizeit'} link={'/betriebssport und freizeit'} />
+                <NavbarButton text={'Betriebssport & Freizeit'} link={'/betriebssport-freizeit'} />
             </nav>
             <GiHamburgerMenu
                 onClick={handleHamburgerClick}

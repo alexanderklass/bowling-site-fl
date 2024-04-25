@@ -3,9 +3,9 @@ import firmenliga from './assets/firmenliga.jpg';
 import phone from './assets/phone.svg';
 import team from './assets/team.svg';
 import { Link } from 'react-router-dom';
-import FadeAnimation from '../../components/FadeAnimation.tsx';
 import { ReactTyped } from 'react-typed';
 import { useEffect } from 'react';
+import FadeAnimation from '../../components/FadeAnimation.tsx';
 import onStartUp from '../../utils/documentHelper.ts';
 
 const Index = () => {

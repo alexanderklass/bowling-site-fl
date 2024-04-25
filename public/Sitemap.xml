@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://www.deinewebsite.de/home</loc>
-        <lastmod>2022-01-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <loc>https://www.flensburger-bowlingcenter.de/</loc>
     </url>
     <url>
-        <loc>http://www.deinewebsite.de/seite2</loc>
-        <lastmod>2022-01-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://www.flensburger-bowlingcenter.de/Öffnungszeiten%20und%20Preise</loc>
+    </url>
+    <url>
+        <loc>https://www.flensburger-bowlingcenter.de/gastronomie</loc>
+    </url>
+    <url>
+        <loc>https://www.flensburger-bowlingcenter.de/veranstaltungen</loc>
+    </url>
+    <url>
+        <loc>https://www.flensburger-bowlingcenter.de/events</loc>
+    </url>
+    <url>
+        <loc>https://www.flensburger-bowlingcenter.de/betriebssport%20und%20freizeit</loc>
     </url>
 </urlset>

@@ -13,11 +13,11 @@ function App() {
         <Routes>
             <Route element={<BasicLayout />}>
                 <Route path="/" element={<Start />} />
-                <Route path="/Öffnungszeiten und Preise" element={<ZeitenUndPreise />} />
+                <Route path="/oeffnungszeiten-preise" element={<ZeitenUndPreise />} />
                 <Route path="/gastronomie" element={<Gastronomie />} />
                 <Route path="/veranstaltungen" element={<Veranstaltungen />} />
                 <Route path="/events" element={<Events />} />
-                <Route path="/betriebssport und freizeit" element={<Betriebssport />} />
+                <Route path="/betriebssport-freizeit" element={<Betriebssport />} />
             </Route>
             <Route path={'/datenschutz'} element={<Datenschutz />} />
         </Routes>

@@ -96,8 +96,8 @@ const Index = () => {
                     <GridDisclosure title={'NUDELGERICHTE'}>
                         <GridBackground backgroundColor={'bg-blue-200 rounded'}>
                             <GridItem cols={'grid-cols-2'} titles={['', '']} />
-                            <GridItem cols={'grid-cols-2'} texts={['"Penne mit Schweinegeschnetzeltem', '13,50€']} />
-                            <GridItem cols={'grid-cols-2'} texts={['"Penne mit Garnelen in Knoblauchsoße', '16,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Penne mit Schweinegeschnetzeltem', '13,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Penne mit Garnelen in Knoblauchsoße', '16,50€']} />
                         </GridBackground>
                     </GridDisclosure>
 
