@@ -83,7 +83,7 @@ const Index = () => {
             </FadeAnimation>
 
             <FadeAnimation direction={'left'}>
-                <section className={'flex flex-col items-center justify-center gap-5 md:flex-row'}>
+                <section className={'flex flex-col items-center justify-center gap-5 md:flex-row-reverse'}>
                     <Image src={eventImage} alt={'eventLogo'} />
                     <div className={'flex w-full max-w-[500px] flex-col gap-2'}>
                         <p className={'text-base font-bold 2xl:text-xl'}>🎳✨ Discobowling in den Mai! ✨🎳</p>

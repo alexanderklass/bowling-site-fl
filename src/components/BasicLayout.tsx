@@ -10,7 +10,7 @@ const BasicLayout = () => {
             <Navbar />
             <div
                 className={
-                    'mx-2 flex w-[300px] items-center justify-center py-10 sm:w-[500px] md:w-[700px] md:py-24 lg:w-[1000px]'
+                    'flex w-full items-center justify-center px-4 py-8 sm:w-[500px] md:mx-2 md:w-[700px] md:py-28 lg:w-[1000px] lg:py-24'
                 }
             >
                 <Outlet />

@@ -79,14 +79,10 @@ const Index = () => {
                         <div className={'flex w-full flex-col gap-2'}>
                             <p className={'text-base font-bold text-blue-500 lg:text-xl'}>Betriebssportliga</p>
                             <p className={'text-xs text-gray-600 lg:text-base'}>
-                                Für den Betriebssport können sich Gruppen aller Art melden. Voraussetzungen sind
-                                mindestens vier Spieler*innen. Es wird mit Handicap gespielt, dass für jeden individuell
-                                berechnet wird. So haben auch Anfänger Gruppen Chancen die sogenannten großen zu
-                                schlagen. Somit ist gewährleistet, dass nicht nur 2 oder 3 Teams die Stadtmeisterschaft
-                                unter sich ausmachen. Am Ende des Jahres findet ein Turnier aus den besten Mannschaften
-                                der Montags- und Dienstags Liga statt. Auch spielen wir ein Extra Einzel Turnier um die
-                                Betriebssport Stadtmeisterschaft im Einzel aus. Es wird somit der Flensburger
-                                Vereinsmeister im Betriebssport Mannschaft sowie Einzel ermittelt.
+                                Für den Betriebssport können sich Gruppen ab vier Spieler*innen anmelden. Mit
+                                individuell berechnetem Handicap haben auch Anfänger eine Chance gegen stärkere Teams.
+                                Jahresendturniere bestimmen die besten Teams der Montags- und Dienstagsligen sowie den
+                                Einzel-Stadtmeister im Betriebssport von Flensburg.
                             </p>
                         </div>
                         <div className={'w-full'}>
@@ -108,15 +104,12 @@ const Index = () => {
                         <div className={'flex w-full flex-col gap-2'}>
                             <p className={'text-base font-bold text-blue-500 lg:text-xl'}>Freizeitliga</p>
                             <p className={'text-xs text-gray-600 lg:text-base'}>
-                                Freitag abends, findet wieder die traditionsreiche Freizeitliga statt. Die Freitags Liga
-                                findet jeden Freitag von 18:15 Uhr bis 21:00 Uhr statt. Außer während der Schulferien
-                                wird jeden Freitag gespielt. Auch hier können Mannschaften ab sofort gemeldet werden.
-                                Die Mannschaftsanzahl ist begrenzt. Gegründet 1970 von US amerikanischen Soldaten, hat
-                                sich die Freizeitliga zur wohl traditionsreichsten Liga im Flensburger Bowlingcenter
-                                entwickelt. Vierer Mannschaften spielen dort mit Handicap den Liga Meister aus. Die
-                                Freizeitliga ist eine reine Spaß Liga mit Wettbewerbscharakter. Am Saisonende werden die
-                                Meister und Meisterinnen in verschiedenen Kategorien bei einer großen
-                                Saisonabschlussfeier gekürt.
+                                Jeden Freitagabend von 18:15 bis 21:00 Uhr, außer während der Schulferien, findet die
+                                traditionsreiche Freizeitliga im Flensburger Bowlingcenter statt. Ursprünglich 1970 von
+                                US-amerikanischen Soldaten gegründet, treten Viererteams mit Handicap an, um den
+                                Liga-Meister zu ermitteln. Die Freizeitliga kombiniert Spaß und Wettbewerb. Mannschaften
+                                können ab sofort gemeldet werden, wobei die Plätze begrenzt sind. Saisonabschluss wird
+                                mit einer großen Feier und Preisverleihung gefeiert.
                             </p>
                         </div>
                         <div className={'w-full'}>

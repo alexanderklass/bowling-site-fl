@@ -14,14 +14,8 @@ const Navbar = () => {
 
     return (
         <header
-            className={
-                'top-0 z-20 flex w-screen flex-col items-center justify-center gap-1 border-b border-blue-100 bg-blue-50 p-2 md:fixed md:justify-around lg:flex-row'
-            }
+            className={`top-0 z-20 flex w-screen flex-col items-center justify-center ${openHamburger ? 'translate-y-0' : '-translate-y-[60%]'} gap-1 border-b border-blue-100 bg-blue-50 p-2 transition-transform duration-300 md:fixed md:justify-around lg:translate-y-0 lg:flex-row`}
         >
-            <GiHamburgerMenu
-                onClick={handleHamburgerClick}
-                className={`my-3 text-[20px] md:my-0 lg:hidden ${openHamburger && 'rotate-90'} flex cursor-pointer transition-all`}
-            />
             <div className="mx-1 hidden items-center gap-2 text-xs lg:flex 2xl:text-base">
                 <NavbarLogo />
                 <div className="whitespace-nowrap text-center">
@@ -29,9 +23,10 @@ const Navbar = () => {
                     <p className={'font-bold text-blue-500'}>Bowling & Gastronomie</p>
                 </div>
             </div>
+
             <ClickableNumber />
             <nav
-                className={`lg:flex ${openHamburger ? 'animate-fade-right' : 'hidden'} flex flex-wrap justify-center gap-2 2xl:flex-row`}
+                className={`grid grid-cols-2 justify-center gap-1 md:flex md:flex-wrap md:gap-0.5 lg:flex xl:gap-2 2xl:flex-row`}
             >
                 <NavbarButton text={'Start'} link={'/'} />
                 <NavbarButton text={'Öffnungszeiten & Preise'} link={'/Öffnungszeiten und Preise'} />
@@ -40,6 +35,11 @@ const Navbar = () => {
                 <NavbarButton text={`Events ${getCurrentYear}`} link={'/events'} />
                 <NavbarButton text={'Betriebssport & Freizeit'} link={'/betriebssport und freizeit'} />
             </nav>
+            <GiHamburgerMenu
+                onClick={handleHamburgerClick}
+                size={24}
+                className={`lg:hidden ${openHamburger ? 'mt-2 rotate-90' : 'mt-7'} flex cursor-pointer transition-all`}
+            />
         </header>
     );
 };

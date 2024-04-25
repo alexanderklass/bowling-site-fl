@@ -12,7 +12,7 @@ const GridItem = ({ texts, titles, cols }: IGridItem) => {
                     return <p key={index}>{item}</p>;
                 })}
             </div>
-            <div className={`grid ${cols} text-[13px]`}>
+            <div className={`grid ${cols} break-words text-[13px]`}>
                 {texts?.map((item, index) => {
                     return <p key={index}>{item}</p>;
                 })}

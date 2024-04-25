@@ -1,5 +1,3 @@
-import speisekarte1 from './assets/Speisekarte-1.jpg';
-import speisekarte2 from './assets/Speisekarte-2.jpg';
 import schnitzel from './assets/schnitzel.png';
 import pizza from './assets/pizza.png';
 import FadeAnimation from '../../components/FadeAnimation.tsx';
@@ -18,7 +16,8 @@ const Index = () => {
     return (
         <main className={'flex flex-col items-center justify-center gap-5 md:gap-5'}>
             <section className={'flex flex-col items-center justify-center gap-20'}>
-                <FadeAnimation direction={'left'}>
+                <FadeAnimation>
+                    <p className={'mb-1 text-xl font-bold'}>Nur für kurze Zeit</p>
                     <div className={'flex flex-col items-center gap-10 md:flex-row'}>
                         <Image src={pizza} alt={'pizza'} />
                         <div className={'flex-col gap-2'}>
@@ -31,7 +30,7 @@ const Index = () => {
                     </div>
                 </FadeAnimation>
 
-                <FadeAnimation direction={'right'}>
+                <FadeAnimation>
                     <div className={'flex flex-col items-center gap-2 md:flex-row-reverse'}>
                         <Image src={schnitzel} alt={'schnitzel'} />
                         <div className={'flex flex-col gap-2'}>
@@ -46,14 +45,91 @@ const Index = () => {
                 </FadeAnimation>
             </section>
 
-            <section className={'flex w-full flex-col items-center justify-center gap-5 md:flex-row'}>
-                <FadeAnimation direction={'left'}>
-                    <Image src={speisekarte1} alt={'speisekarte 1'} />
-                </FadeAnimation>
-                <FadeAnimation direction={'right'}>
-                    <Image src={speisekarte2} alt={'speisekarte 2'} />
-                </FadeAnimation>
-            </section>
+            <FadeAnimation>
+                <p className={'mb-1 text-xl font-bold'}>Speisekarte 📖</p>
+                <section
+                    className={
+                        'grid w-full grid-cols-1 items-start justify-center gap-y-2 rounded-md bg-blue-50 p-2 ring-1 md:grid-cols-2 md:gap-x-4 md:gap-y-2'
+                    }
+                >
+                    <GridDisclosure title={'PIZZA'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-3'} titles={['', 'Klein', 'Groß']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Margherita', '10,90€', '10,50€']} />
+                            <GridItem
+                                cols={'grid-cols-3'}
+                                texts={['Salami, Schinken oder Thunfisch', '10,90€', '12,90€']}
+                            />
+                            <GridItem cols={'grid-cols-3'} texts={['Veggie', '11,50€', '14,50€']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Hawaii', '11,50€', '14,50€']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Hackfleisch(Rind)', '12,50€', '15,50€']} />
+                        </GridBackground>
+                    </GridDisclosure>
+
+                    <GridDisclosure title={'PIZZABRÖTCHEN'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-3'} titles={['', 'Käse', 'Schinken, Salami, Thunfisch']} />
+                            <GridItem cols={'grid-cols-3'} texts={['8 Stück + Dip', '7,50€', '8,50€']} />
+                            <div className={'mt-5 text-[13px] text-blue-700'}>
+                                <p>Dips: Aioli, Hollondaise oder Cocktail</p>
+                                <p>Extra Dip: 1,00€</p>
+                            </div>
+                        </GridBackground>
+                    </GridDisclosure>
+
+                    <GridDisclosure title={'SCHNITZEL'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-2'} titles={['', '']} />
+                            <GridItem cols={'grid-cols-2'} texts={['"Wiener Art" mit Salatbeilage', '15,00€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Holsteiner Art(mit Spiegelei)', '16,90€']} />
+                            <GridItem
+                                cols={'grid-cols-2'}
+                                texts={['Mit Champignonrahmsoße, Paprikarahmsoße oder Zwiebelsoße', '17,50€']}
+                            />
+                            <div className={'mt-5 text-[13px] text-blue-700'}>
+                                <p>Inklusive Salat und einer Beilage nach Wahl:</p>
+                                <p>Pommes, Kroketten oder Bratkartoffeln</p>
+                            </div>
+                        </GridBackground>
+                    </GridDisclosure>
+
+                    <GridDisclosure title={'NUDELGERICHTE'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-2'} titles={['', '']} />
+                            <GridItem cols={'grid-cols-2'} texts={['"Penne mit Schweinegeschnetzeltem', '13,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['"Penne mit Garnelen in Knoblauchsoße', '16,50€']} />
+                        </GridBackground>
+                    </GridDisclosure>
+
+                    <GridDisclosure title={'BURGER'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-2'} titles={['', '']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Hamburger mit Pommes', '10,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Cheeseburger mit Pommes', '11,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Veggieburger mit Pommes', '11,50€']} />
+                        </GridBackground>
+                    </GridDisclosure>
+
+                    <GridDisclosure title={'WEITER HIGHLIGHTS'}>
+                        <GridBackground backgroundColor={'bg-blue-200 rounded'}>
+                            <GridItem cols={'grid-cols-2'} titles={['', '']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Nuggets mit Pommes', '7,50€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['Pommes mit Ketchup/Mayo', '5,00€']} />
+                            <GridItem
+                                cols={'grid-cols-2'}
+                                texts={['Gebackener Camembert mit Preiselbeeren', '8,90€']}
+                            />
+                            <GridItem cols={'grid-cols-2'} texts={['Currywurst mit Pommes', '9,50€']} />
+                            <GridItem
+                                cols={'grid-cols-2'}
+                                texts={['Garnelen mit Aioli, Salatbeilage und Baguettebrot', '14,90€']}
+                            />
+                            <GridItem cols={'grid-cols-2'} texts={['Bauernfrühstück', '10,50€']} />
+                            <GridItem cols={'grid-cols-2 text-blue-700'} texts={['Ketchup oder Mayo extra', '0,50€']} />
+                        </GridBackground>
+                    </GridDisclosure>
+                </section>
+            </FadeAnimation>
 
             <FadeAnimation>
                 <p className={'mb-1 text-xl font-bold'}>Getränke 🍹</p>
@@ -178,7 +254,7 @@ const Index = () => {
                         </GridBackground>
                     </GridDisclosure>
 
-                    <GridDisclosure title={'FLASCHE INKL. 2 FLASCHEN SOFTGETRÄNKE'}>
+                    <GridDisclosure title={'FLASCHE + 2 FLASCHEN SOFTGETRÄNKE'}>
                         <GridBackground>
                             <GridItem cols={'grid-cols-2'} titles={['', 'PREIS']} />
                             <GridItem cols={'grid-cols-2'} texts={['STERNMARKE', '25,00€']} />
