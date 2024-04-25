@@ -3,7 +3,6 @@ import { animated, useSpring } from 'react-spring';
 
 export interface IAnimation {
     children?: React.ReactNode;
-    direction?: string;
     className?: string;
 }
 

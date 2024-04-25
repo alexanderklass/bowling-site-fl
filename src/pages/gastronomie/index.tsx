@@ -55,7 +55,7 @@ const Index = () => {
                     <GridDisclosure title={'PIZZA'}>
                         <GridBackground backgroundColor={'bg-blue-200 rounded'}>
                             <GridItem cols={'grid-cols-3'} titles={['', 'Klein', 'Groß']} />
-                            <GridItem cols={'grid-cols-3'} texts={['Margherita', '10,90€', '10,50€']} />
+                            <GridItem cols={'grid-cols-3'} texts={['Margherita', '9,50€', '10,50€']} />
                             <GridItem
                                 cols={'grid-cols-3'}
                                 texts={['Salami, Schinken oder Thunfisch', '10,90€', '12,90€']}
@@ -80,7 +80,7 @@ const Index = () => {
                     <GridDisclosure title={'SCHNITZEL'}>
                         <GridBackground backgroundColor={'bg-blue-200 rounded'}>
                             <GridItem cols={'grid-cols-2'} titles={['', '']} />
-                            <GridItem cols={'grid-cols-2'} texts={['"Wiener Art" mit Salatbeilage', '15,00€']} />
+                            <GridItem cols={'grid-cols-2'} texts={['"Wiener Art" mit Salatbeilage', '15,50€']} />
                             <GridItem cols={'grid-cols-2'} texts={['Holsteiner Art(mit Spiegelei)', '16,90€']} />
                             <GridItem
                                 cols={'grid-cols-2'}

@@ -11,7 +11,7 @@ const Index = () => {
     }, []);
     return (
         <main className="flex flex-col items-center justify-center gap-5 2xl:gap-10 ">
-            <FadeAnimation direction={'left'}>
+            <FadeAnimation>
                 <section
                     className={
                         'relative flex flex-col gap-1 rounded-lg p-3 text-xs shadow-xl ring-1 ring-gray-300 2xl:text-base'
