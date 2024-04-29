@@ -22,7 +22,7 @@ const GridDisclosure = ({ children, title }: IGridDisclosure) => {
                     }
                 >
                     <p>{title}️</p>
-                    <IoIosArrowDown className={`${open ? '' : 'rotate-180'} text-2xl transition-all duration-300`} />
+                    <IoIosArrowDown className={`${open ? 'rotate-180' : ''} text-2xl transition-all duration-300`} />
                 </Disclosure.Button>
                 <Disclosure.Panel className={'w-full animate-fade bg-blue-200'}>{children}</Disclosure.Panel>
             </Disclosure>

@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import BackgroundImage from './BackgroundImage.tsx';
+import ScrollArrow from './ScrollArrow.tsx';
 
 const BasicLayout = () => {
     return (
@@ -15,6 +16,7 @@ const BasicLayout = () => {
             >
                 <Outlet />
             </div>
+            <ScrollArrow />
             <Footer />
         </main>
     );

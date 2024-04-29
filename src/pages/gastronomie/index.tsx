@@ -110,7 +110,7 @@ const Index = () => {
                         </GridBackground>
                     </GridDisclosure>
 
-                    <GridDisclosure title={'WEITER HIGHLIGHTS'}>
+                    <GridDisclosure title={'WEITERE HIGHLIGHTS'}>
                         <GridBackground backgroundColor={'bg-blue-200 rounded'}>
                             <GridItem cols={'grid-cols-2'} titles={['', '']} />
                             <GridItem cols={'grid-cols-2'} texts={['Nuggets mit Pommes', '7,50€']} />

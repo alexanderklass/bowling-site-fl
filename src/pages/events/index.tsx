@@ -17,7 +17,7 @@ const Index = () => {
                 <div className={'w-[300px] md:w-[500px]'}>
                     <ImageSwiper list={eventsList} />
                 </div>
-                <div className={'flex w-full max-w-[500px] flex-col gap-1 text-base md:text-xl'}>
+                <div className={'mt-5 flex w-full max-w-[500px] flex-col gap-1 text-base md:mt-0 md:text-xl'}>
                     <p className={'font-bold text-blue-500'}>Entdeckt die aktuellen Events 2024!</p>
                     <p className={'text-base text-gray-600 lg:text-xl'}>
                         Seid immer auf dem Laufenden und verpasst keine unserer Veranstaltungen dieses Jahr. Folgt uns

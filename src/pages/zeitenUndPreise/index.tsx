@@ -134,7 +134,7 @@ const Index = () => {
                             ihr Parkticket aus dem Parkhaus Rote Straße für 2,-€, egal wie lange sie bleiben ! Buchungen
                             sind nur telefonisch möglich Leider können wir nur Stornierungen bis 5 Tage vor dem Termin
                             kostenlos entgegen nehmen. Spätere Stornierungen müssen wir berechnen. Vielen Dank für Euer
-                            Verständnis
+                            Verständnis.
                         </p>
                         <p className={'text-xs font-bold text-blue-500 md:text-base'}>
                             SONDERZEITEN AUF ANFRAGE, ZB. SCHULKLASSEN, BUNDESWEHR, BETRIEBSAUSFLÜGE ETC.

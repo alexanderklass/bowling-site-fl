@@ -7,12 +7,12 @@ import Image from '../../components/Image.tsx';
 import { ReactTyped } from 'react-typed';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import onStartUp from '../../utils/documentHelper.ts';
 
 const Index = () => {
     useEffect(() => {
-        onStartUp();
+        document.title = 'Flensburger-Bowlingcenter - Bowling & Gastronomie';
     }, []);
+
     return (
         <main className={'z-10 flex flex-col gap-10 text-base md:gap-20 2xl:text-xl'}>
             <FadeAnimation>
